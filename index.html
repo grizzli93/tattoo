@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://anijs.github.io/lib/animationcss/animate.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+    <div class="body-wrapper">
+        <!--<i class="fa fa-camera-retro fa-2x"></i>-->
+        <div class="head">
+            <div class="title-text">Here we go</div>
+            <div class="main-menu-trigger" data-anijs="if: click, do: flipOutY animated">
+                <i class="fa fa-bars fa-3x"></i>
+            </div>
+        </div>
+        <div class="parallax" data-anijs="if: click, do: $toggleClass menu-active, to: body"></div>
+        <div class="wrapper">
+            <div class="col-xs-offset-2 col-xs-8 round-block-wrapper">
+                <div id="round1" class="round-wrapper" data-toggle="tooltip" data-placement="top" title="Tooltip 1">
+                    <div class="overlay rounded absolute"></div>
+                    <div class = "rounded" style="background-image: url('i/test.jpg')"></div>
+                </div>
+                <div id="round2" class="round-wrapper" data-toggle="tooltip" data-placement="top" title="Tooltip 2">
+                    <div class="overlay rounded absolute"></div>
+                    <div class = "rounded" style="background-image: url('i/brov.jpg')"></div>
+                </div>
+                <div id="round3" class="round-wrapper" data-toggle="tooltip" data-placement="top" title="Tooltip 3">
+                    <div class="overlay rounded absolute"></div>
+                    <div class = "rounded" style="background-image: url('i/retro.jpg')"></div>
+                </div>
+                <div id="round4" class="round-wrapper" data-toggle="tooltip" data-placement="top" title="Tooltip 4">
+                    <div class="overlay rounded absolute"></div>
+                    <div class = "rounded" style="background-image: url('i/proc.jpg')"></div>
+                </div>
+                <div id="round5" class="round-wrapper">
+                    <div class="overlay rounded absolute"></div>
+                    <div class = "rounded" style="background-image: url('i/stan.jpg')" data-toggle="tooltip" data-placement="top" title="Tooltip 5"></div>
+                </div>
+                <div id="round6" class="round-wrapper">
+                    <div class="overlay rounded absolute"></div>
+                    <div class = "rounded" style="background-image: url('i/test.jpg')" data-toggle="tooltip" data-placement="top" title="Tooltip 6"></div>
+                </div>
+            </div>
+            <div class="">
+                <div class="col-xs-8 col-xs-offset-2 post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cupiditate dolorum ea est ex, fugit harum iure labore non, omnis quis voluptatum? Ab accusamus asperiores commodi, cumque cupiditate deleniti dolor eius eum, exercitationem fuga harum illum impedit inventore itaque laboriosam libero molestias nesciunt nulla quos repellendus saepe, sint tempora totam?</div>
+                <div class="col-xs-8 col-xs-offset-2 post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cupiditate dolorum ea est ex, fugit harum iure labore non, omnis quis voluptatum? Ab accusamus asperiores commodi, cumque cupiditate deleniti dolor eius eum, exercitationem fuga harum illum impedit inventore itaque laboriosam libero molestias nesciunt nulla quos repellendus saepe, sint tempora totam?</div>
+                <div class="col-xs-8 col-xs-offset-2 post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cupiditate dolorum ea est ex, fugit harum iure labore non, omnis quis voluptatum? Ab accusamus asperiores commodi, cumque cupiditate deleniti dolor eius eum, exercitationem fuga harum illum impedit inventore itaque laboriosam libero molestias nesciunt nulla quos repellendus saepe, sint tempora totam?</div>
+                <div class="col-xs-8 col-xs-offset-2 post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cupiditate dolorum ea est ex, fugit harum iure labore non, omnis quis voluptatum? Ab accusamus asperiores commodi, cumque cupiditate deleniti dolor eius eum, exercitationem fuga harum illum impedit inventore itaque laboriosam libero molestias nesciunt nulla quos repellendus saepe, sint tempora totam?</div>
+                <div class="col-xs-8 col-xs-offset-2 post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cupiditate dolorum ea est ex, fugit harum iure labore non, omnis quis voluptatum? Ab accusamus asperiores commodi, cumque cupiditate deleniti dolor eius eum, exercitationem fuga harum illum impedit inventore itaque laboriosam libero molestias nesciunt nulla quos repellendus saepe, sint tempora totam?</div>
+                <div class="col-xs-8 col-xs-offset-2 post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, cupiditate dolorum ea est ex, fugit harum iure labore non, omnis quis voluptatum? Ab accusamus asperiores commodi, cumque cupiditate deleniti dolor eius eum, exercitationem fuga harum illum impedit inventore itaque laboriosam libero molestias nesciunt nulla quos repellendus saepe, sint tempora totam?</div>        </div>
+            <div class="hidden divarrow" data-anijs="if: click, do: rotateIn animated, to: .round-wrapper">
+                <div class="arrow-up"></div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-menu">
+        <nav id="slide-menu">
+            <ul>
+                <li class="timeline">
+                    <i class="fa fa-image"></i>
+                    <span>Эскизы</span>
+                </li>
+                <li class="events">
+                    <i class="fa fa-money"></i>
+                    <span>Цены</span>
+                </li>
+                <li class="calendar">
+                    <i class="fa fa-eye"></i>
+                    <span>Примеры работ</span>
+                </li>
+                <li class="sep">
+                    <i class="fa fa-comments"></i>
+                    <span>Вопросы и ответы</span>
+                </li>
+                <li class="logout">
+                    <i class="fa fa-phone"></i>
+                    <span>Контакты</span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+<script src="js/anijs-min.js"></script>
+</html>
